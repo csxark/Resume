@@ -1,369 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="CSS/main.css" />
-    <!-- EmailJS CDN -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init("J-8IMRDU9_P7osnkr");
-      })();
-    </script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <meta http-equiv="refresh" content="1000" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <div id="loader">
-      <div class="astronaut" data-js="astro">
-        <div class="head"></div>
-        <div class="arm arm-left"></div>
-        <div class="arm arm-right"></div>
-        <div class="body">
-          <div class="panel"></div>
-        </div>
-        <div class="leg leg-left"></div>
-        <div class="leg leg-right"></div>
-        <div class="schoolbag"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="CSS/main.css" />
+  <!-- EmailJS CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("J-8IMRDU9_P7osnkr");
+    })();
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <meta http-equiv="refresh" content="1000" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div id="loader">
+    <div class="astronaut" data-js="astro">
+      <div class="head"></div>
+      <div class="arm arm-left"></div>
+      <div class="arm arm-right"></div>
+      <div class="body">
+        <div class="panel"></div>
       </div>
-      <!-- The progress counter will be injected here by JavaScript -->
-      <div class="box-of-star1">
-        <div class="star star-position1"></div>
-        <div class="star star-position2"></div>
-        <div class="star star-position3"></div>
-        <div class="star star-position4"></div>
-        <div class="star star-position5"></div>
-        <div class="star star-position6"></div>
-        <div class="star star-position7"></div>
-      </div>
-      <div class="box-of-star2">
-        <div class="star star-position1"></div>
-        <div class="star star-position2"></div>
-        <div class="star star-position3"></div>
-        <div class="star star-position4"></div>
-        <div class="star star-position5"></div>
-        <div class="star star-position6"></div>
-        <div class="star star-position7"></div>
-      </div>
-      <div class="box-of-star3">
-        <div class="star star-position1"></div>
-        <div class="star star-position2"></div>
-        <div class="star star-position3"></div>
-        <div class="star star-position4"></div>
-        <div class="star star-position5"></div>
-        <div class="star star-position6"></div>
-        <div class="star star-position7"></div>
-      </div>
-      <div class="box-of-star4">
-        <div class="star star-position1"></div>
-        <div class="star star-position2"></div>
-        <div class="star star-position3"></div>
-        <div class="star star-position4"></div>
-        <div class="star star-position5"></div>
-        <div class="star star-position6"></div>
-        <div class="star star-position7"></div>
-      </div>
+      <div class="leg leg-left"></div>
+      <div class="leg leg-right"></div>
+      <div class="schoolbag"></div>
     </div>
-
-    <section id="nav">
-      <header id="navbar">
-        <a href="#" class="logo">Portfolio</a>
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav>
-          <a href="#home" class="active">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#certificates">Certificates</a>
-        </nav>
-      </header>
-    </section>
-
-    <section class="home" id="home">
-      <div class="home-img" data-aos="fade-right">
-        <img src="assets/image.jpg" alt="Profile Pic" />
-      </div>
-      <div class="home-content" data-aos="fade-left">
-        <h1>Hi, It's <span>Ark</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
-        <p>
-          Computer Science and Engineering student with hands-on experience in front-end development using HTML, CSS, JavaScript, React.js, and TailwindCSS. Skilled in building responsive, user-friendly applications, with projects like JeevMitr, BrainStorm, and IndieBazaar. Actively exploring Python, Django, and data tools like NumPy and Pandas. Quick learner, team player, and passionate about creating impactful digital solutions.
-        </p> 
-        <div class="button-container">
-          <!-- <button id="contactBtn" class="btn">Contact</button> -->
-          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
-            <button id="resumeBtn" class="btn">Resume</button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="inner" style="background-color: black; color: ghostwhite">
-        <div class="Tech_header">
-          <h1>Languages</h1>
-        </div>
-        <div class="Tcontainer">
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="skill-title"><a href="https://github.com/csxark/Leraning_C" target="_blank">
-              <div class="tech_img">
-                <img
-                  class="skill-icon"
-                  src="assets/tech/C.png"
-                  alt="C Programming Language"
-                />
-              </div></a>
-              <h3>C</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img
-                  class="skill-icon"
-                  src="assets/tech/C++.png"
-                  alt="C++ Programming Language"
-                />
-              </div>
-              <h3>C++</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="skill-title"><a href="https://github.com/csxark/WEB-DEV-Projects" target="_blank" rel="noopener noreferrer">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/html.png" alt="Html" />
-              </div></a>
-              <h3>HTML</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
-            <div class="skill-title"><a href="https://github.com/csxark/WEB-DEV-Projects" target="_blank" rel="noopener noreferrer">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/css.png" alt="Css" />
-              </div></a>
-              <h3>CSS</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="500">
-            <div class="skill-title"><a href="https://github.com/csxark/WEB-DEV-Projects" target="_blank" rel="noopener noreferrer">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/js.png" alt="JavaScript" />
-              </div></a>
-              <h3>JavaScript</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/python.png" alt="Python" />
-              </div>
-              <h3>Python</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="tech">
-      <div class="inner" style="background-color: black; color: ghostwhite">
-        <div class="Tech_header">
-          <h1>Libraies & Frameworks</h1> 
-        </div>
-        <div class="Tcontainer">
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img
-                  class="skill-icon"
-                  src="assets/tech/Pandas.png"
-                  alt="Pandas Python library"
-                />
-              </div>
-              <h3>Pandas</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img
-                  class="skill-icon"
-                  src="assets/tech/numpy.png"
-                  alt="Numpy Python library"
-                />
-              </div>
-              <h3>Numpy</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img
-                  class="skill-icon"
-                  src="assets/tech/Django.png"
-                  alt="Django Python library"
-                />
-              </div>
-              <h3>Django</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/MySQL.png" alt="MySQL" />
-              </div>
-              <h3>MySQL</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="500">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/react.png" alt="React" />
-              </div>
-              <h3>React</h3>
-            </div>
-          </div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
-            <div class="skill-title">
-              <div class="tech_img">
-                <img class="skill-icon" src="assets/tech/tailwindcss.png" alt="Tailwind CSS" />
-              </div>
-              <h3>Tailwind CSS</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="Tech_header">
-        <h1>Projects</h1>
-      </div>
-      <div class="project-grid">
-        <!-- Project Card 1 -->
-        <div id="project-1" class="project-item" data-aos="fade-up">
-          <div class="project-content">
-            <div class="project-image">
-              <img src="assets/projects/brainstorm.png" alt="brainstorm">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">BrainStorm</h3>
-              <p class="project-description">
-                A real-time collaborative brainstorming platform with mind mapping, note-taking, and task management features. Built to enhance team creativity and productivity through visual organization of ideas.
-              </p>
-              <div class="tech-stack">
-                <h4>Tech Stack</h4>
-                <div class="tech-tags">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">TailwindCSS</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://brainstorm-sigma-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div id="project-2" class="project-item" data-aos="fade-up">
-          <div class="project-content">
-            <div class="project-image">
-              <img src="assets/projects/jeevmitr.png" alt="jeevmitr">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Jeevmitr</h3>
-              <p class="project-description">
-                It is an all-in-one platform dedicated to pet healthcare and well-being. It connects pet owners with veterinarians, trainers, groomers, and NGOs, offering services like pet training, grooming, product shopping, and rescue support.
-              </p>
-              <div class="tech-stack">
-                <h4>Tech Stack</h4>
-                <div class="tech-tags">
-                  <span class="tech-tag">Html</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://jeevmitr.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project Card 3 -->
-        <div id="project-2" class="project-item" data-aos="fade-up">
-          <div class="project-content">
-            <div class="project-image">
-              <img src="assets/projects/indiebazaar.png" alt="indiebazaar">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">IndieBazaar</h3>
-              <p class="project-description">
-                A platform for independent artists and creators to showcase and sell their work. It features a user-friendly interface for browsing, purchasing, and supporting indie creators, fostering a vibrant community of artists and art lovers. 
-              </p>
-              <div class="tech-stack">
-                <h4>Tech Stack</h4>
-                <div class="tech-tags">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">TailwindCSS</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://indie-bazaar-sand.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section>
-
-<section id="education" style="background-color: black; color: ghostwhite">
-  <div class="Tech_header">
-    <h1>Education</h1>
-  </div> 
-  <div class="education-grid">
-    <div class="education-item" data-aos="fade-up">
-      <h3>Bachelor of Technology in Computer Science and Engineering</h3>
-      <p>Manipal University Jaipur</p>
-      <p>2024 - 2028</p>
+    <!-- The progress counter will be injected here by JavaScript -->
+    <div class="box-of-star1">
+      <div class="star star-position1"></div>
+      <div class="star star-position2"></div>
+      <div class="star star-position3"></div>
+      <div class="star star-position4"></div>
+      <div class="star star-position5"></div>
+      <div class="star star-position6"></div>
+      <div class="star star-position7"></div>
+    </div>
+    <div class="box-of-star2">
+      <div class="star star-position1"></div>
+      <div class="star star-position2"></div>
+      <div class="star star-position3"></div>
+      <div class="star star-position4"></div>
+      <div class="star star-position5"></div>
+      <div class="star star-position6"></div>
+      <div class="star star-position7"></div>
+    </div>
+    <div class="box-of-star3">
+      <div class="star star-position1"></div>
+      <div class="star star-position2"></div>
+      <div class="star star-position3"></div>
+      <div class="star star-position4"></div>
+      <div class="star star-position5"></div>
+      <div class="star star-position6"></div>
+      <div class="star star-position7"></div>
+    </div>
+    <div class="box-of-star4">
+      <div class="star star-position1"></div>
+      <div class="star star-position2"></div>
+      <div class="star star-position3"></div>
+      <div class="star star-position4"></div>
+      <div class="star star-position5"></div>
+      <div class="star star-position6"></div>
+      <div class="star star-position7"></div>
     </div>
   </div>
-  <div class="education-grid">
-    <div class="education-item" data-aos="fade-up">
-      <h3>Senior Secondary School</h3>
-      <p>Tagore Public School, Prayagraj</p>
-      <p>2010 - 2024</p>
-    </div> 
-</section>
 
-<!-- <section id="experience" style="background-color: black; color: ghostwhite">
+  <section id="nav">
+    <header id="navbar">
+      <a href="#" class="logo">Portfolio</a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+      </nav>
+    </header>
+  </section>
+
+  <section class="home" id="home">
+    <div class="home-img" data-aos="fade-right">
+      <img src="assets/image.jpg" alt="Profile Pic" />
+    </div>
+    <div class="home-content" data-aos="fade-left">
+      <h1>Hi, It's <span>Ark</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>
+        Computer Science and Engineering student with hands-on experience in front-end development using HTML, CSS,
+        JavaScript, React.js, and TailwindCSS. Skilled in building responsive, user-friendly applications, with projects
+        like JeevMitr, BrainStorm, and IndieBazaar. Actively exploring Python, Django, and data tools like NumPy and
+        Pandas. Quick learner, team player, and passionate about creating impactful digital solutions.
+      </p>
+      <div class="button-container">
+        <!-- <button id="contactBtn" class="btn">Contact</button> -->
+        <a href="assets/Resume_Ark.pdf" target="_blank" rel="noopener noreferrer">
+          <button id="resumeBtn" class="btn">Resume</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="inner" style="background-color: black; color: ghostwhite">
+      <div class="Tech_header">
+        <h1>Languages</h1>
+      </div>
+      <div class="Tcontainer">
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
+          <div class="skill-title"><a href="https://github.com/csxark/Leraning_C" target="_blank">
+              <div class="tech_img">
+                <img class="skill-icon" src="assets/tech/C.png" alt="C Programming Language" />
+              </div>
+            </a>
+            <h3>C</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/C++.png" alt="C++ Programming Language" />
+            </div>
+            <h3>C++</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
+          <div class="skill-title"><a href="https://github.com/csxark/WEB-DEV-Projects" target="_blank"
+              rel="noopener noreferrer">
+              <div class="tech_img">
+                <img class="skill-icon" src="assets/tech/html.png" alt="Html" />
+              </div>
+            </a>
+            <h3>HTML</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
+          <div class="skill-title"><a href="https://github.com/csxark/WEB-DEV-Projects" target="_blank"
+              rel="noopener noreferrer">
+              <div class="tech_img">
+                <img class="skill-icon" src="assets/tech/css.png" alt="Css" />
+              </div>
+            </a>
+            <h3>CSS</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="500">
+          <div class="skill-title"><a href="https://github.com/csxark/WEB-DEV-Projects" target="_blank"
+              rel="noopener noreferrer">
+              <div class="tech_img">
+                <img class="skill-icon" src="assets/tech/js.png" alt="JavaScript" />
+              </div>
+            </a>
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/python.png" alt="Python" />
+            </div>
+            <h3>Python</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech">
+    <div class="inner" style="background-color: black; color: ghostwhite">
+      <div class="Tech_header">
+        <h1>Libraies & Frameworks</h1>
+      </div>
+      <div class="Tcontainer">
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/Pandas.png" alt="Pandas Python library" />
+            </div>
+            <h3>Pandas</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/numpy.png" alt="Numpy Python library" />
+            </div>
+            <h3>Numpy</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/Jupyter.png" alt="Numpy Python library" />
+            </div>
+            <h3>Jupyter</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/Django.png" alt="Django Python library" />
+            </div>
+            <h3>Django</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/MySQL.png" alt="MySQL" />
+            </div>
+            <h3>MySQL</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="500">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/react.png" alt="React" />
+            </div>
+            <h3>React</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/tailwindcss.png" alt="Tailwind CSS" />
+            </div>
+            <h3>Tailwind CSS</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/Vercel.png" alt="Tailwind CSS" />
+            </div>
+            <h3>Vercel</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/supabase-icon.svg" alt="Tailwind CSS" />
+            </div>
+            <h3>SupaBase</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/Node.js.png" alt="Tailwind CSS" />
+            </div>
+            <h3>Node</h3>
+          </div>
+        </div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-title">
+            <div class="tech_img">
+              <img class="skill-icon" src="assets/tech/Express.png" alt="Tailwind CSS" />
+            </div>
+            <h3>Express</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="Tech_header">
+      <h1>Projects</h1>
+    </div>
+    <div class="project-grid">
+      <!-- Project Card 1 -->
+      <div id="project-1" class="project-item" data-aos="fade-up">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/projects/brainstorm.png" alt="brainstorm">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">BrainStorm</h3>
+            <p class="project-description">
+              A real-time collaborative brainstorming platform with mind mapping, note-taking, and task management
+              features. Built to enhance team creativity and productivity through visual organization of ideas.
+            </p>
+            <div class="tech-stack">
+              <h4>Tech Stack</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TailwindCSS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://brainstorm-sigma-one.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-hover">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div id="project-2" class="project-item" data-aos="fade-up">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/projects/jeevmitr.png" alt="jeevmitr">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Jeevmitr</h3>
+            <p class="project-description">
+              It is an all-in-one platform dedicated to pet healthcare and well-being. It connects pet owners with
+              veterinarians, trainers, groomers, and NGOs, offering services like pet training, grooming, product
+              shopping, and rescue support.
+            </p>
+            <div class="tech-stack">
+              <h4>Tech Stack</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Html</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://jeevmitr.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card 3 -->
+      <div id="project-3" class="project-item" data-aos="fade-up">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/projects/indiebazaar.png" alt="indiebazaar">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">IndieBazaar</h3>
+            <p class="project-description">
+              A platform for independent artists and creators to showcase and sell their work. It features a
+              user-friendly interface for browsing, purchasing, and supporting indie creators, fostering a vibrant
+              community of artists and art lovers.
+            </p>
+            <div class="tech-stack">
+              <h4>Tech Stack</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TailwindCSS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://indie-bazaar-sand.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-hover">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="project-4" class="project-item" data-aos="fade-up">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/projects/HopeFlow.png" alt="HopeFlow">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">HopeFlow</h3>
+            <p class="project-description">
+              A mental health platform designed to provide support and resources for individuals facing mental health
+              challenges. It offers a safe space for users to share their experiences, access professional help, and
+              connect with a supportive community.
+            </p>
+            <div class="tech-stack">
+              <h4>Tech Stack</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">SupaBase</span>
+                <span class="tech-tag">Gemini-Api</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://hope-flow.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-hover">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="project-5" class="project-item" data-aos="fade-up">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/projects/WalletWise.png" alt="WalletWise">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">WallerWise</h3>
+            <p class="project-description">
+              A personal finance management tool that helps users track their expenses, set budgets, and achieve their
+              financial goals. It provides insights into spending habits and offers tips for better financial planning. Personalised Dashboard
+              with Expense Tracking, Budgeting, and Financial Goal Setting.
+            </p>
+            <div class="tech-stack">
+              <h4>Tech Stack</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">SupaBase</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://wallet-wise-nine.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-hover">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" style="background-color: black; color: ghostwhite">
+    <div class="Tech_header">
+      <h1>Education</h1>
+    </div>
+    <div class="education-grid">
+      <div class="education-item" data-aos="fade-up">
+        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+        <p>Manipal University Jaipur</p>
+        <p>2024 - 2028</p>
+      </div>
+    </div>
+    <div class="education-grid">
+      <div class="education-item" data-aos="fade-up">
+        <h3>Senior Secondary School</h3>
+        <p>Tagore Public School, Prayagraj</p>
+        <p>2010 - 2024</p>
+      </div>
+  </section>
+
+  <!-- <section id="experience" style="background-color: black; color: ghostwhite">
   <div class="Tech_header">
     <h1>Experience</h1>  
   </div>
@@ -372,335 +461,335 @@
     </div> 
 </section> -->
 
-<section id="certificates" style="background-color: black; color: ghostwhite">
-  <div class="Tech_header">
-    <h1>Certifications</h1>
-  </div>    
-  <div class="experience-grid m-5">
-    <section id="carousel-section certificates">
-      <div class="carousel-container">
-        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- Carousel Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> 
-          </div>
-          
-          <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-              <div class="carousel-grid">
-                <div class="grid-item" data-aos="fade-up">
-                  <div class="certificate-badge">Workshop</div>
-                  <img src="assets/certificates/Certificate_isro_ai_ml_page-0001.jpg" class="carousel-img" alt="AI/ML By Isro" 
-                       data-title="AI/ML By Isro" 
-                       data-description="Attended a workshop on AI/ML by ISRO. In this workshop, I learned about the basics of AI/ML and how it is used in space research and GeoData analysis."
-                       data-date="March 2024"
-                       data-skills="Machine Learning, AI, Space Technology"
-                       onclick="openImageModal(this)">
-                  <div class="grid-caption">AI/ML By Isro</div>
-                </div>
-                <div class="grid-item" data-aos="fade-up">
-                  <div class="certificate-badge">Contest</div>
-                  <img src="assets/certificates/nclark.png" class="carousel-img" alt="National Coding League By Scaler" 
-                       data-title="National Coding League By Scaler"
-                       data-description="National Coding League By Scaler is a coding competition where I participated and secured a good rank. I learned a lot about competitive programming and problem-solving."
-                       data-date="February 2024"
-                       data-skills="Competitive Programming, Data Structures, Algorithms"
-                       onclick="openImageModal(this)">
-                  <div class="grid-caption">National Coding League By Scaler</div>
-                </div>
-              </div>
+  <section id="certificates" style="background-color: black; color: ghostwhite">
+    <div class="Tech_header">
+      <h1>Certifications</h1>
+    </div>
+    <div class="experience-grid m-5">
+      <section id="carousel-section certificates">
+        <div class="carousel-container">
+          <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <!-- Second Slide -->
-            <div class="carousel-item">
-              <div class="carousel-grid">
-                <div class="grid-item" data-aos="fade-up">
-                  <div class="certificate-badge">Hackathon</div>
-                  <img src="assets/certificates/turing hacks.jpg" class="carousel-img" alt="Turing Hacks 2.0"
-                       data-title="Turing Hacks 2.0" 
-                       data-description="Turing Hacks 2.0 is a hackathon organized by Turing Sapiens. I participated in this hackathon and became the Finalist I learned a lot about problem-solving and teamwork." 
-                       data-skills="Problem Solving, Teamwork, Hackathon"
-                       data-date="April 2025"
-                       onclick="openImageModal(this)">
-                  <div class="grid-caption">Finalist in Turing Hacks 2.0</div>
-                </div>
-                <div class="grid-item" data-aos="fade-up">
-                  <div class="certificate-badge">Hackathon</div>
-                  <img src="assets/certificates/webathon_winner.jpg" class="carousel-img" alt="Webathon" 
-                       data-title="Winner Webathon SKIT Jaipur"
-                       data-description="We bagged 1st place at the Webathon – Pravah’25, SKIT Jaipur! I learned a lot about web development and how to work in a team. I also learned about the importance of deadlines and how to manage time effectively."
-                       data-date="February 2025"
-                       data-skills="HTML, CSS, JavaScript, React" 
-                       onclick="openImageModal(this)"> 
-                  <div class="grid-caption">Webathon Winner</div>
-                </div>
-              </div>
-            </div>
-            <!-- Third Slide -->
-            <div class="carousel-item">
-              <div class="carousel-grid">
-                <div class="grid-item" data-aos="fade-up">
-                  <div class="certificate-badge">Internship</div>
-                  <img src="assets/certificates/scalerYIIC.png" class="carousel-img" alt="Scaler YIIC" 
-                       data-title="Young Innovators Internship Challenge by Scaler"
-                       data-description="Scaler YIIC is a 6-week workshop in which I learned about various Technologies, Personal Branding, and Career Development. I learned a lot about the industry and how to build a career in the tech industry."
-                       data-date="January 2024" 
-                       data-skills="Career Development, Technology, Personal Branding"
-                       onclick="openImageModal(this)">
-                  <div class="grid-caption">Young Innovators Internship Challenge</div>
-                </div>
-                <div class="grid-item" data-aos="fade-up">
-                  <div class="certificate-badge">Hackathon</div>
-                  <img src="assets/certificates/muj_elicit.png" class="carousel-img" alt="Elicit By Manipal University Jaipur ACM Student Chapter" 
-                       data-title="Elicit'24 at Manipal University Jaipur"
-                       data-description="Elicit'24 is a event organized in Manipal University Jaipur by ACM Student Chapter. I participated in kagglethon. I learned a lot about Data Science and Machine Learning."
-                       data-date="April 2024"
-                       data-skills="Data Science, Machine Learning, Kaggle" 
-                       onclick="openImageModal(this)"> 
-                  <div class="grid-caption">Elicit'24 at MUJ</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
 
-      <!-- Enhanced Modal -->
-      <div class="modal fade" id="imageModal">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalTitle"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-              <img id="modalImage" src="" alt="Modal Image">
-              <div class="modal-description mt-3" id="modalDescription"></div>
-              <div class="certificate-details mt-4">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="detail-label">Completed on</div>
-                    <div class="detail-value" id="modalDate"></div>
+            <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <div class="carousel-grid">
+                  <div class="grid-item" data-aos="fade-up">
+                    <div class="certificate-badge">Workshop</div>
+                    <img src="assets/certificates/Certificate_isro_ai_ml_page-0001.jpg" class="carousel-img"
+                      alt="AI/ML By Isro" data-title="AI/ML By Isro"
+                      data-description="Attended a workshop on AI/ML by ISRO. In this workshop, I learned about the basics of AI/ML and how it is used in space research and GeoData analysis."
+                      data-date="March 2024" data-skills="Machine Learning, AI, Space Technology"
+                      onclick="openImageModal(this)">
+                    <div class="grid-caption">AI/ML By Isro</div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="detail-label">Skills Gained</div>
-                    <div class="detail-value" id="modalSkills"></div>
+                  <div class="grid-item" data-aos="fade-up">
+                    <div class="certificate-badge">Contest</div>
+                    <img src="assets/certificates/nclark.png" class="carousel-img"
+                      alt="National Coding League By Scaler" data-title="National Coding League By Scaler"
+                      data-description="National Coding League By Scaler is a coding competition where I participated and secured a good rank. I learned a lot about competitive programming and problem-solving."
+                      data-date="February 2024" data-skills="Competitive Programming, Data Structures, Algorithms"
+                      onclick="openImageModal(this)">
+                    <div class="grid-caption">National Coding League By Scaler</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="carousel-grid">
+                  <div class="grid-item" data-aos="fade-up">
+                    <div class="certificate-badge">Hackathon</div>
+                    <img src="assets/certificates/turing hacks.jpg" class="carousel-img" alt="Turing Hacks 2.0"
+                      data-title="Turing Hacks 2.0"
+                      data-description="Turing Hacks 2.0 is a hackathon organized by Turing Sapiens. I participated in this hackathon and became the Finalist I learned a lot about problem-solving and teamwork."
+                      data-skills="Problem Solving, Teamwork, Hackathon" data-date="April 2025"
+                      onclick="openImageModal(this)">
+                    <div class="grid-caption">Finalist in Turing Hacks 2.0</div>
+                  </div>
+                  <div class="grid-item" data-aos="fade-up">
+                    <div class="certificate-badge">Hackathon</div>
+                    <img src="assets/certificates/webathon_winner.jpg" class="carousel-img" alt="Webathon"
+                      data-title="Winner Webathon SKIT Jaipur"
+                      data-description="We bagged 1st place at the Webathon – Pravah’25, SKIT Jaipur! I learned a lot about web development and how to work in a team. I also learned about the importance of deadlines and how to manage time effectively."
+                      data-date="February 2025" data-skills="HTML, CSS, JavaScript, React"
+                      onclick="openImageModal(this)">
+                    <div class="grid-caption">Webathon Winner</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Third Slide -->
+              <div class="carousel-item">
+                <div class="carousel-grid">
+                  <div class="grid-item" data-aos="fade-up">
+                    <div class="certificate-badge">Internship</div>
+                    <img src="assets/certificates/scalerYIIC.png" class="carousel-img" alt="Scaler YIIC"
+                      data-title="Young Innovators Internship Challenge by Scaler"
+                      data-description="Scaler YIIC is a 6-week workshop in which I learned about various Technologies, Personal Branding, and Career Development. I learned a lot about the industry and how to build a career in the tech industry."
+                      data-date="January 2024" data-skills="Career Development, Technology, Personal Branding"
+                      onclick="openImageModal(this)">
+                    <div class="grid-caption">Young Innovators Internship Challenge</div>
+                  </div>
+                  <div class="grid-item" data-aos="fade-up">
+                    <div class="certificate-badge">Hackathon</div>
+                    <img src="assets/certificates/muj_elicit.png" class="carousel-img"
+                      alt="Elicit By Manipal University Jaipur ACM Student Chapter"
+                      data-title="Elicit'24 at Manipal University Jaipur"
+                      data-description="Elicit'24 is a event organized in Manipal University Jaipur by ACM Student Chapter. I participated in kagglethon. I learned a lot about Data Science and Machine Learning."
+                      data-date="April 2024" data-skills="Data Science, Machine Learning, Kaggle"
+                      onclick="openImageModal(this)">
+                    <div class="grid-caption">Elicit'24 at MUJ</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a id="viewCertificate" href="#" class="btn btn-danger" target="_blank">View Full Certificate</a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Enhanced Modal -->
+        <div class="modal fade" id="imageModal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <img id="modalImage" src="" alt="Modal Image">
+                <div class="modal-description mt-3" id="modalDescription"></div>
+                <div class="certificate-details mt-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="detail-label">Completed on</div>
+                      <div class="detail-value" id="modalDate"></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="detail-label">Skills Gained</div>
+                      <div class="detail-value" id="modalSkills"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a id="viewCertificate" href="#" class="btn btn-danger" target="_blank">View Full Certificate</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> 
-</div>
-</section>
+      </section>
+    </div>
+  </section>
 
-    <section id="footer">
-      <footer class="portfolio-footer">
-        <div class="footer-content">
-            <div class="footer-info" data-aos="fade-right">
-                <h3>Contact Information</h3>
-                <p>I'm open to new opportunities and professional collaborations.</p>
-                <ul class="contact-details">
-                    <li><i class="fas fa-map-marker-alt"></i> [Prayagraj,Uttar Pradesh, India]</li>
-                    <li><i class="fas fa-envelope"></i>arktandoncs@gmail.com</li>
-                    <!-- <li><i class="fas fa-phone"></i> +1 (XXX) XXX-XXXX</li> -->
-                </ul>
-            </div>
-            <div class="footer-quick-links" data-aos="fade-up">
-                <h3>Quick Links</h3>
-                <ul class="quick-links-grid">
-                    <li><a href="#home"><i class="fas fa-arrow-right"></i> Home</a></li>
-                    <!-- <li><a href="#about"><i class="fas fa-arrow-right"></i> About</a></li> -->
-                    <li><a href="#skills"><i class="fas fa-arrow-right"></i> Skills</a></li>
-                    <li><a href="#projects"><i class="fas fa-arrow-right"></i> Projects</a></li>
-                    <li><a href="#education"><i class="fas fa-arrow-right"></i> Education</a></li>
-                    <!-- <li><a href="#experience"><i class="fas fa-arrow-right"></i> Experience</a></li> -->
-                    <li><a href="#certificates"><i class="fas fa-arrow-right"></i> Certificates</a></li>
-                    <!-- <li><a href="#contact"><i class="fas fa-arrow-right"></i> Contact</a></li> -->
-                </ul>
-            </div>
-            <div class="footer-social" data-aos="fade-left">
-                <h3 style="margin-bottom: 30px;">Connect</h3> 
-                <ul class="wrapper"> 
-                    <li class="icon linkedin">
-                        <span class="tooltip">LinkedIn</span> 
-                        <a href="https://www.linkedin.com/in/csxark" target="_blank" rel="noopener noreferrer" style="color: #0080ff;">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li class="icon github">
-                        <span class="tooltip">GitHub</span>
-                        <a href="https://github.com/csxark" target="_blank" rel="noopener noreferrer" style="color: #ffffff;">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="icon instagram">
-                        <span class="tooltip">Instagram</span>
-                        <a href="https://www.instagram.com/csxark/" target="_blank" rel="noopener noreferrer" style="color:#ff007b; font-weight: 900px;">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="icon portfolio">
-                        <span class="tooltip">Portfolio</span>
-                        <a href="https://csxark.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" style="color: #ff0000;">
-                            <i class="fas fa-briefcase"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <section id="footer">
+    <footer class="portfolio-footer">
+      <div class="footer-content">
+        <div class="footer-info" data-aos="fade-right">
+          <h3>Contact Information</h3>
+          <p>I'm open to new opportunities and professional collaborations.</p>
+          <ul class="contact-details">
+            <li><i class="fas fa-map-marker-alt"></i> [Prayagraj,Uttar Pradesh, India]</li>
+            <li><i class="fas fa-envelope"></i>arktandoncs@gmail.com</li>
+            <!-- <li><i class="fas fa-phone"></i> +1 (XXX) XXX-XXXX</li> -->
+          </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Ark Tandon. All rights reserved.</p>
+        <div class="footer-quick-links" data-aos="fade-up">
+          <h3>Quick Links</h3>
+          <ul class="quick-links-grid">
+            <li><a href="#home"><i class="fas fa-arrow-right"></i> Home</a></li>
+            <!-- <li><a href="#about"><i class="fas fa-arrow-right"></i> About</a></li> -->
+            <li><a href="#skills"><i class="fas fa-arrow-right"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-arrow-right"></i> Projects</a></li>
+            <li><a href="#education"><i class="fas fa-arrow-right"></i> Education</a></li>
+            <!-- <li><a href="#experience"><i class="fas fa-arrow-right"></i> Experience</a></li> -->
+            <li><a href="#certificates"><i class="fas fa-arrow-right"></i> Certificates</a></li>
+            <!-- <li><a href="#contact"><i class="fas fa-arrow-right"></i> Contact</a></li> -->
+          </ul>
         </div>
+        <div class="footer-social" data-aos="fade-left">
+          <h3 style="margin-bottom: 30px;">Connect</h3>
+          <ul class="wrapper">
+            <li class="icon linkedin">
+              <span class="tooltip">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/csxark" target="_blank" rel="noopener noreferrer"
+                style="color: #0080ff;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="icon github">
+              <span class="tooltip">GitHub</span>
+              <a href="https://github.com/csxark" target="_blank" rel="noopener noreferrer" style="color: #ffffff;">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <a href="https://www.instagram.com/csxark/" target="_blank" rel="noopener noreferrer"
+                style="color:#ff007b; font-weight: 900px;">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="icon portfolio">
+              <span class="tooltip">Portfolio</span>
+              <a href="https://csxark.github.io/Portfolio/" target="_blank" rel="noopener noreferrer"
+                style="color: #ff0000;">
+                <i class="fas fa-briefcase"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ark Tandon. All rights reserved.</p>
+      </div>
     </footer>
-    </section>
+  </section>
 
-    <section id="contactmodal">
-      <!-- The Modal -->
-      <div id="contactModal" class="modal">
-        <div class="modal-content" id="content-modal">
-          <span class="close">&times;</span>
-          <h1 style="text-align: center; font-size: 300%">Contact</h1>
-            <p id="form-status" style="font-size: 1.5rem;"></p>
-          <form id="contact-form">
-            <label for="from_name">Name</label>
-            <input type="text" id="from_name" name="from_name" required>
-      
-            <label for="reply_to">Email</label>
-            <input type="email" id="reply_to" name="reply_to" required>
-      
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-      
-            <button type="submit" id="submit">Send</button>
-          </form>
-        </div>
+  <section id="contactmodal">
+    <!-- The Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content" id="content-modal">
+        <span class="close">&times;</span>
+        <h1 style="text-align: center; font-size: 300%">Contact</h1>
+        <p id="form-status" style="font-size: 1.5rem;"></p>
+        <form id="contact-form">
+          <label for="from_name">Name</label>
+          <input type="text" id="from_name" name="from_name" required>
+
+          <label for="reply_to">Email</label>
+          <input type="email" id="reply_to" name="reply_to" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" id="submit">Send</button>
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Include EmailJS library -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init('J-8IMRDU9_P7osnkr');
-      })();
-      
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        // Disable submit button and show loading state
-        const submitBtn = document.getElementById('submit');
-        const formStatus = document.getElementById('form-status');
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Sending...';
-        formStatus.textContent = '';
-        formStatus.style.color = '';
-  
-        emailjs.sendForm('service_4e5pu8a', 'template_37pbdwk', this)
-          .then(function() {
-            formStatus.textContent = 'Message sent successfully!';
-            formStatus.style.color = '#00ff00';
-            // Clear the form fields
-            event.target.reset();
-          }, function(error) {
-            formStatus.textContent = 'Failed to send message. Please try again later.';
-            formStatus.style.color = '#ff0000';
-          })
-          .finally(function() {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = 'Send';
-            // Auto hide the modal after success
-            setTimeout(() => {
-              if(formStatus.textContent === 'Message sent successfully!') {
-                document.getElementById('contactModal').style.display = 'none';
-              }
-            }, 2000);
-          });
-      });
+  <!-- Include EmailJS library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('J-8IMRDU9_P7osnkr');
+    })();
 
-      // Modal handling
-      document.addEventListener("DOMContentLoaded", function () {
-        var modal = document.getElementById("contactModal");
-        var btn = document.getElementById("contactBtn");
-        var span = document.getElementsByClassName("close")[0];
-        
-        // Input validation
-        const inputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
-        inputs.forEach(input => {
-          input.addEventListener('invalid', function(e) {
-            e.preventDefault();
-            this.classList.add('error');
-          });
-          
-          input.addEventListener('input', function() {
-            if(this.classList.contains('error')) {
-              this.classList.remove('error');
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Disable submit button and show loading state
+      const submitBtn = document.getElementById('submit');
+      const formStatus = document.getElementById('form-status');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending...';
+      formStatus.textContent = '';
+      formStatus.style.color = '';
+
+      emailjs.sendForm('service_4e5pu8a', 'template_37pbdwk', this)
+        .then(function () {
+          formStatus.textContent = 'Message sent successfully!';
+          formStatus.style.color = '#00ff00';
+          // Clear the form fields
+          event.target.reset();
+        }, function (error) {
+          formStatus.textContent = 'Failed to send message. Please try again later.';
+          formStatus.style.color = '#ff0000';
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Send';
+          // Auto hide the modal after success
+          setTimeout(() => {
+            if (formStatus.textContent === 'Message sent successfully!') {
+              document.getElementById('contactModal').style.display = 'none';
             }
-          });
+          }, 2000);
+        });
+    });
+
+    // Modal handling
+    document.addEventListener("DOMContentLoaded", function () {
+      var modal = document.getElementById("contactModal");
+      var btn = document.getElementById("contactBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      // Input validation
+      const inputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+      inputs.forEach(input => {
+        input.addEventListener('invalid', function (e) {
+          e.preventDefault();
+          this.classList.add('error');
         });
 
-        btn.onclick = function () {
-          modal.style.display = "block";
-          // Reset form and status when opening modal
-          document.getElementById('contact-form').reset();
-          document.getElementById('form-status').textContent = '';
-        };
-
-        span.onclick = function () {
-          modal.style.display = "none";
-        };
-
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
+        input.addEventListener('input', function () {
+          if (this.classList.contains('error')) {
+            this.classList.remove('error');
           }
-        };
+        });
       });
 
-      // Loader
-      window.addEventListener("load", function () {
-        const loader = document.getElementById("loader");
+      btn.onclick = function () {
+        modal.style.display = "block";
+        // Reset form and status when opening modal
+        document.getElementById('contact-form').reset();
+        document.getElementById('form-status').textContent = '';
+      };
 
-        if (loader) {
-          console.log("Loader found, starting animation");
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
-          // Keep the loader visible for 3 seconds
-          setTimeout(() => {
-            console.log("Hiding loader");
-            loader.style.opacity = "0";
-
-            // Remove the loader from the DOM after the fade-out effect
-            setTimeout(() => {
-              loader.style.display = "none";
-              console.log("Loader removed");
-            }, 500); // 500ms for the fade-out effect to complete
-          }, 1000); // 1 seconds delay
-        } else {
-          console.error("Loader element not found");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-      });
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-      });
-    </script>
-  </body>
+      };
+    });
+
+    // Loader
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+
+      if (loader) {
+        console.log("Loader found, starting animation");
+
+        // Keep the loader visible for 3 seconds
+        setTimeout(() => {
+          console.log("Hiding loader");
+          loader.style.opacity = "0";
+
+          // Remove the loader from the DOM after the fade-out effect
+          setTimeout(() => {
+            loader.style.display = "none";
+            console.log("Loader removed");
+          }, 500); // 500ms for the fade-out effect to complete
+        }, 1000); // 1 seconds delay
+      } else {
+        console.error("Loader element not found");
+      }
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
+</body>
+
 </html>
